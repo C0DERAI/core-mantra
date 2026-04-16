@@ -1,0 +1,10 @@
+{
+  "name": "core-mantra",
+  "version": "0.1.0",
+  "description": "Layered engineering workflow — compounding loop over lifecycle commands over a discipline engine. Synthesis of agent-skills, compound-engineering, and superpowers.",
+  "license": "MIT",
+  "homepage": "https://github.com/core-mantra/core-mantra",
+  "engines": {
+    "claudeCode": ">=1.0.0"
+  }
+}

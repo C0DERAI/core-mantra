@@ -1,0 +1,11 @@
+{
+  "name": "core-mantra",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/**/*.test.mjs",
+    "test:skills": "node --test tests/skills/**/*.test.mjs",
+    "test:commands": "node --test tests/commands/**/*.test.mjs"
+  }
+}
