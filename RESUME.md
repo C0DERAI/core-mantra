@@ -10,16 +10,17 @@ Work-in-progress build of Core Mantra. Pick up from this checkpoint.
 - **Phase 1 (Tasks 4–6):** complete — commits `395fe33`, `e7343d5`, `710ba99`
 - **Phase 2 (Tasks 7–12):** complete — commits `87180f3`, `e102aa1`, `25dd372`, `56dbe92`, `b7739c1`, `45ee74b`
 - **Phase 3 (Tasks 13–17):** complete — commits `61ced05`, `fb907ed`, `453119f`, `27a327c`, `f3a9c0a`
-- **Tests:** 32/32 passing (`npm test`)
+- **Phase 4 (Tasks 18–19):** complete — commits `a7bac28`, `ef76d2b`
+- **Tests:** 34/34 passing (`npm test`)
 
 ## Next
 
-Phase 4 — Tasks 18–19: two compound skills (`extract-learnings`,
-`codify-to-skill`). Same markdown pattern — batch in one Haiku subagent.
+Phase 5 — Tasks 20–23: four subagent definitions in `agents/` (repo-scanner,
+spec-reviewer, plan-reviewer, code-reviewer). Each = one markdown file +
+one frontmatter test. Safe to batch in one Haiku subagent.
 
-After that: Phase 5 (4 agents), Phase 6 (12 commands), Phase 7 (2 hooks
-with real Bash logic + tests), Phase 8 (integration tests + CI +
-templates), Phase 9 (docs).
+After that: Phase 6 (12 commands), Phase 7 (2 Bash hooks with real logic +
+tests), Phase 8 (integration tests + CI + GitHub templates), Phase 9 (docs).
 
 ## Execution approach
 
