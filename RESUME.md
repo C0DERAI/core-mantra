@@ -9,15 +9,17 @@ Work-in-progress build of Core Mantra. Pick up from this checkpoint.
 - **Phase 0 (Tasks 1–3):** complete — commits `be1e5c4`, `8248ded`, `018c593`
 - **Phase 1 (Tasks 4–6):** complete — commits `395fe33`, `e7343d5`, `710ba99`
 - **Phase 2 (Tasks 7–12):** complete — commits `87180f3`, `e102aa1`, `25dd372`, `56dbe92`, `b7739c1`, `45ee74b`
-- **Tests:** 27/27 passing (`npm test`)
+- **Phase 3 (Tasks 13–17):** complete — commits `61ced05`, `fb907ed`, `453119f`, `27a327c`, `f3a9c0a`
+- **Tests:** 32/32 passing (`npm test`)
 
 ## Next
 
-Phase 3 — Tasks 13–17 in the plan: five discipline skill markdown files
-(`tdd-red-green`, `yagni-check`, `subagent-driven-dev`,
-`systematic-debugging`, `simplify`). Same pattern as Phase 2 — one
-`SKILL.md` + one validator test per task. Safe to batch in a single
-Haiku subagent.
+Phase 4 — Tasks 18–19: two compound skills (`extract-learnings`,
+`codify-to-skill`). Same markdown pattern — batch in one Haiku subagent.
+
+After that: Phase 5 (4 agents), Phase 6 (12 commands), Phase 7 (2 hooks
+with real Bash logic + tests), Phase 8 (integration tests + CI +
+templates), Phase 9 (docs).
 
 ## Execution approach
 
