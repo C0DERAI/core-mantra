@@ -1,6 +1,6 @@
 ---
 name: tdd-red-green
-description: Auto-triggered during /mantra:build whenever new behavior is being added. Enforces: write the failing test first, see it fail, implement the minimum to make it pass, refactor, commit. Blocks any attempt to write implementation code before a failing test exists.
+description: "Auto-triggered during /mantra:build whenever new behavior is being added. Enforces: write the failing test first, see it fail, implement the minimum to make it pass, refactor, commit. Blocks any attempt to write implementation code before a failing test exists."
 type: discipline
 ---
 

@@ -4,8 +4,20 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "test": "node --test tests/**/*.test.mjs",
-    "test:skills": "node --test tests/skills/**/*.test.mjs",
-    "test:commands": "node --test tests/commands/**/*.test.mjs"
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "test": "tsc --noEmit && node --import tsx --test \"tests/**/*.test.ts\"",
+    "test:skills": "node --import tsx --test \"tests/skills/**/*.test.ts\"",
+    "test:commands": "node --import tsx --test \"tests/commands/**/*.test.ts\"",
+    "test:python": "python -m pytest tools/tests -q",
+    "test:all": "npm test && npm run test:python"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3"
+  },
+  "engines": {
+    "node": ">=22.0.0"
   }
 }

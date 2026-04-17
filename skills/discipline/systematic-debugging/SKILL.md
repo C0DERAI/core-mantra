@@ -1,6 +1,6 @@
 ---
 name: systematic-debugging
-description: Auto-triggered on any test failure, unexpected behavior, or reported bug. Enforces: reproduce first, narrow to minimal case, form a hypothesis with a falsifiable prediction, verify, fix root cause, add a regression test. Blocks shotgun fixes and "try random changes".
+description: "Auto-triggered on any test failure, unexpected behavior, or reported bug. Enforces: reproduce first, narrow to minimal case, form a hypothesis with a falsifiable prediction, verify, fix root cause, add a regression test. Blocks shotgun fixes and \"try random changes\"."
 type: discipline
 ---
 
