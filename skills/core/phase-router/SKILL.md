@@ -25,7 +25,7 @@ Given an intent and a topic, determine whether the next step is brainstorm, spec
 
 ## Algorithm
 
-Use `skills/core/phase-router/route.mjs`.
+Use `src/skills/core/phase-router.ts` (exports `nextPhase`).
 
 ## Approval gates
 

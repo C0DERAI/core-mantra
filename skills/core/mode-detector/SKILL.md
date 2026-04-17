@@ -17,7 +17,7 @@ Match ceremony to task size. A one-line bugfix should not trigger a full spec + 
 
 ## Heuristic
 
-Use `skills/core/mode-detector/detect.mjs`:
+Use `src/skills/core/mode-detector.ts` (exports `detectMode`):
 
 1. Explicit flag wins.
 2. Introduces new public API or new dependency → `full`.
