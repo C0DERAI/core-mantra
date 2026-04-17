@@ -1,6 +1,8 @@
 # Core Mantra
 
-A Claude Code plugin that layers a compounding outer loop over lifecycle commands over a discipline engine. Synthesis of [agent-skills](https://github.com/addyosmani/agent-skills), [compound-engineering](https://github.com/EveryInc/compound-engineering-plugin), and [superpowers](https://github.com/obra/superpowers).
+A powerful **Claude Code plugin** that layers a compounding outer loop over lifecycle commands, grounded in a strong discipline engine.
+
+It transforms how you work with AI coding agents by making every engineering cycle more effective than the last; enforcing quality, learning from outcomes, and building momentum through structured iteration.
 
 ## 60-second quickstart
 
