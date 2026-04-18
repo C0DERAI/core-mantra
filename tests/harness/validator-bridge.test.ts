@@ -29,7 +29,7 @@ test("python validator accepts all shipped skills", (t) => {
   }
   const out = execFileSync(
     "python",
-    ["tools/validate_skill.py", "skills/**/SKILL.md"],
+    ["tools/validate_skill.py", "plugins/core-mantra/skills/**/SKILL.md"],
     { encoding: "utf8" },
   );
   const report = JSON.parse(out) as {

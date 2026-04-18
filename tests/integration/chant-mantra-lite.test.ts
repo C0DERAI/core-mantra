@@ -7,7 +7,7 @@ import { detectMode } from "../../src/skills/core/mode-detector.js";
 import { readUtf8 } from "../_helpers/fs.js";
 
 test("chant-mantra wiring: command exists and references required skills", () => {
-  const { body } = parseFrontmatter(readUtf8("commands/chant-mantra.md"));
+  const { body } = parseFrontmatter(readUtf8("plugins/core-mantra/commands/chant-mantra.md"));
   for (const ref of ["phase-router", "mode-detector", "mantra:build", "mantra:ship"]) {
     assert.ok(body.includes(ref), `chant-mantra must reference ${ref}`);
   }
@@ -33,22 +33,22 @@ test("full mode on reviewed, unshipped topic routes to ship", () => {
 
 test("all referenced skills exist on disk", () => {
   const required = [
-    "skills/core/mode-detector/SKILL.md",
-    "skills/core/phase-router/SKILL.md",
-    "skills/core/artifact-memory/SKILL.md",
-    "skills/lifecycle/brainstorming/SKILL.md",
-    "skills/lifecycle/writing-specs/SKILL.md",
-    "skills/lifecycle/writing-plans/SKILL.md",
-    "skills/lifecycle/executing-plans/SKILL.md",
-    "skills/lifecycle/reviewing-code/SKILL.md",
-    "skills/lifecycle/shipping/SKILL.md",
-    "skills/discipline/tdd-red-green/SKILL.md",
-    "skills/discipline/yagni-check/SKILL.md",
-    "skills/discipline/subagent-driven-dev/SKILL.md",
-    "skills/discipline/systematic-debugging/SKILL.md",
-    "skills/discipline/simplify/SKILL.md",
-    "skills/compound/extract-learnings/SKILL.md",
-    "skills/compound/codify-to-skill/SKILL.md",
+    "plugins/core-mantra/skills/core/mode-detector/SKILL.md",
+    "plugins/core-mantra/skills/core/phase-router/SKILL.md",
+    "plugins/core-mantra/skills/core/artifact-memory/SKILL.md",
+    "plugins/core-mantra/skills/lifecycle/brainstorming/SKILL.md",
+    "plugins/core-mantra/skills/lifecycle/writing-specs/SKILL.md",
+    "plugins/core-mantra/skills/lifecycle/writing-plans/SKILL.md",
+    "plugins/core-mantra/skills/lifecycle/executing-plans/SKILL.md",
+    "plugins/core-mantra/skills/lifecycle/reviewing-code/SKILL.md",
+    "plugins/core-mantra/skills/lifecycle/shipping/SKILL.md",
+    "plugins/core-mantra/skills/discipline/tdd-red-green/SKILL.md",
+    "plugins/core-mantra/skills/discipline/yagni-check/SKILL.md",
+    "plugins/core-mantra/skills/discipline/subagent-driven-dev/SKILL.md",
+    "plugins/core-mantra/skills/discipline/systematic-debugging/SKILL.md",
+    "plugins/core-mantra/skills/discipline/simplify/SKILL.md",
+    "plugins/core-mantra/skills/compound/extract-learnings/SKILL.md",
+    "plugins/core-mantra/skills/compound/codify-to-skill/SKILL.md",
   ];
   for (const p of required) assert.ok(existsSync(p), `missing ${p}`);
 });
@@ -69,9 +69,9 @@ test("all lifecycle commands exist", () => {
   ];
   for (const c of cmds) {
     assert.ok(
-      existsSync(`commands/mantra-${c}.md`),
-      `missing commands/mantra-${c}.md`,
+      existsSync(`plugins/core-mantra/commands/mantra-${c}.md`),
+      `missing plugins/core-mantra/commands/mantra-${c}.md`,
     );
   }
-  assert.ok(existsSync("commands/chant-mantra.md"));
+  assert.ok(existsSync("plugins/core-mantra/commands/chant-mantra.md"));
 });

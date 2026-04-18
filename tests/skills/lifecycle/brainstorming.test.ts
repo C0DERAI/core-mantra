@@ -3,5 +3,5 @@ import { validateSkill } from "../../../src/harness/validate-skill.js";
 import { readUtf8 } from "../../_helpers/fs.js";
 
 test("brainstorming SKILL.md is valid", () => {
-  validateSkill(readUtf8("skills/lifecycle/brainstorming/SKILL.md"), "brainstorming");
+  validateSkill(readUtf8("plugins/core-mantra/skills/lifecycle/brainstorming/SKILL.md"), "brainstorming");
 });

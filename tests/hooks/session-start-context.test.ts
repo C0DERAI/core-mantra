@@ -8,7 +8,7 @@ test("reports mode from .mantra-config.json", () => {
   rmSync(dir, { recursive: true, force: true });
   mkdirSync(`${dir}/docs/core-mantra`, { recursive: true });
   writeFileSync(`${dir}/docs/core-mantra/.mantra-config.json`, '{"mode":"full"}');
-  const out = execFileSync("bash", ["hooks/session-start-context.sh", dir]).toString();
+  const out = execFileSync("bash", ["plugins/core-mantra/hooks/session-start-context.sh", dir]).toString();
   assert.ok(out.includes("mode=full"));
 });
 
@@ -16,6 +16,6 @@ test("reports no-config when file missing", () => {
   const dir = ".tmp/session-test-empty";
   rmSync(dir, { recursive: true, force: true });
   mkdirSync(dir, { recursive: true });
-  const out = execFileSync("bash", ["hooks/session-start-context.sh", dir]).toString();
+  const out = execFileSync("bash", ["plugins/core-mantra/hooks/session-start-context.sh", dir]).toString();
   assert.ok(out.includes("no-config"));
 });

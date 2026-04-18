@@ -4,7 +4,7 @@ import { parseFrontmatter } from "../../src/harness/parse-frontmatter.js";
 import { readUtf8 } from "../_helpers/fs.js";
 
 test("chant-mantra command", () => {
-  const { data, body } = parseFrontmatter(readUtf8("commands/chant-mantra.md"));
+  const { data, body } = parseFrontmatter(readUtf8("plugins/core-mantra/commands/chant-mantra.md"));
   assert.equal(data["name"], "chant-mantra");
   for (const needed of [
     "phase-router",

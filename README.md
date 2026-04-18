@@ -1,3 +1,5 @@
+![Core Mantra cover image](./src/img/core-mantra-cover.jpg)
+
 # Core Mantra
 
 A powerful **Claude Code plugin** that layers a compounding outer loop over lifecycle commands, grounded in a strong discipline engine.
