@@ -4,7 +4,7 @@ import { parseFrontmatter } from "../../src/harness/parse-frontmatter.js";
 import { readUtf8 } from "../_helpers/fs.js";
 
 test("mantra-review command", () => {
-  const { data, body } = parseFrontmatter(readUtf8("commands/mantra-review.md"));
+  const { data, body } = parseFrontmatter(readUtf8("plugins/core-mantra/commands/mantra-review.md"));
   assert.equal(data["name"], "mantra:review");
   for (const needed of [
     "reviewing-code",

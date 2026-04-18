@@ -4,7 +4,7 @@ import { parseFrontmatter } from "../../src/harness/parse-frontmatter.js";
 import { readUtf8 } from "../_helpers/fs.js";
 
 test("mantra-spec command", () => {
-  const { data, body } = parseFrontmatter(readUtf8("commands/mantra-spec.md"));
+  const { data, body } = parseFrontmatter(readUtf8("plugins/core-mantra/commands/mantra-spec.md"));
   assert.equal(data["name"], "mantra:spec");
   assert.ok(body.includes("writing-specs"));
   assert.ok(body.includes("artifact-memory"));

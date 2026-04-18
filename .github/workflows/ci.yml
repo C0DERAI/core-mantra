@@ -25,4 +25,4 @@ jobs:
           python-version: "3.12"
       - run: pip install -r tools/requirements.txt
       - run: python -m pytest tools/tests -q
-      - run: python tools/validate_skill.py skills/**/SKILL.md
+      - run: python tools/validate_skill.py plugins/core-mantra/skills/**/SKILL.md
