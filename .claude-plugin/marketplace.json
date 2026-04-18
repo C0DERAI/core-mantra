@@ -1,0 +1,11 @@
+{
+  "name": "core-mantra",
+  "owner": { "name": "C0DERAI" },
+  "plugins": [
+    {
+      "name": "core-mantra",
+      "source": ".",
+      "description": "Layered engineering workflow — compounding loop over lifecycle commands over a discipline engine. Synthesis of agent-skills, compound-engineering, and superpowers."
+    }
+  ]
+}
