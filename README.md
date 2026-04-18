@@ -7,7 +7,7 @@ It transforms how you work with AI coding agents by making every engineering cyc
 ## 60-second quickstart
 
 ```bash
-/plugin marketplace add core-mantra/core-mantra
+/plugin marketplace add C0DERAI/core-mantra
 /plugin install core-mantra
 ```
 
