@@ -2427,7 +2427,7 @@ git commit -m "docs: add README and CREDITS"
 ## Claude Code (local dev)
 
 ```bash
-git clone https://github.com/core-mantra/core-mantra.git
+git clone https://github.com/C0DERAI/core-mantra.git
 claude --plugin-dir /path/to/core-mantra
 ```
 

@@ -8,3 +8,7 @@ __pycache__/
 *.pyc
 .pytest_cache/
 .venv/
+
+#MISC
+
+docs/plans/2026-04-16-core-mantra-implementation.md
