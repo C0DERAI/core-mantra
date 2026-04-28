@@ -55,3 +55,25 @@ def test_handles_multiline_description_via_yaml():
         "## Purpose\n"
     )
     assert validate_source(src) == []
+
+
+def test_rejects_bare_colon_space_in_description():
+    """Regression: bare ': ' in a description value breaks PyYAML safe_load.
+
+    The TS regex parser reads the full line and silently passes; PyYAML is
+    strict and raises a parse error. This test pins that the Python validator
+    (the canonical one) catches the pattern so broken SKILL.md files are
+    rejected before shipping.
+    """
+    src = (
+        "---\n"
+        "name: foo\n"
+        "description: Compressed communication: drops filler.\n"
+        "type: core\n"
+        "---\n"
+        "\n"
+        "## Purpose\n"
+        "hi\n"
+    )
+    errors = validate_source(src)
+    assert any("frontmatter parse error" in e for e in errors)
