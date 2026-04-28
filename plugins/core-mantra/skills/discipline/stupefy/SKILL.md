@@ -1,6 +1,6 @@
 ---
 name: stupefy
-description: Use when user says "stupefy mode", "talk like stupefy", "use stupefy", "less tokens", "be brief", or invokes /mantra:stupefy. Also auto-activates in lite mode. Ultra-compressed communication: drops filler while keeping full technical accuracy.
+description: Use when user says "stupefy mode", "talk like stupefy", "use stupefy", "less tokens", "be brief", or invokes /mantra:stupefy. Also auto-activates in lite mode. Ultra-compressed communication — drops filler while keeping full technical accuracy.
 type: discipline
 ---
 
